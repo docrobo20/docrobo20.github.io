@@ -1,22 +1,60 @@
-/* 
-color chart 
-#273746 - dark navy
-#566573 - shale blue ish
-#808b96 - blue grey
-#aeb6bf - grey
-#d5d8dc - light grey
-#ecf0f1 - off white
-*/
 
+:root {
+    --background-primary: #273746;
+    --background-secondary: #566573;
+    --background-highlight: #808b96;
+    --text-primary: #ecf0f1;
+    --text-secondary: #aeb6bf;
 
-body {
-    background-color: #273746;
-    color: #ecf0f1;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-section, header, footer {
-    background-color:inherit;
+/* ------------------------------------------------
+
+1. GENERAL 
+
+------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ------------------------------------------------
+
+2. FONT 
+
+------------------------------------------------- */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.contact_info {
+    font-size: 0.8rem;
+}
+
+.index_link {
+    font-size: 1.5rem;
+}
+
+/* ------------------------------------------------
+
+3. LAYOUT 
+
+------------------------------------------------- */
+body, section, header, footer {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+}
+
+div {
+    display: flex;
+    justify-content: center;
 }
 
 a {
@@ -25,7 +63,7 @@ a {
     display: block;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
@@ -35,5 +73,30 @@ a:visited{
 
 .contact_info {
     display: block;
-    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
 }
+
+.index_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    padding: 0.2rem;
+    margin: 0.5rem;
+    background-color: var(--background-secondary);
+    border-radius: 10px;
+    border: 0.2rem solid var(--background-highlight);
+}
+
+.index_link:hover{
+    background-color: var(--background-highlight);
+}
+
+
+
+/* ------------------------------------------------
+
+4. EFFECTS 
+
+------------------------------------------------- */
