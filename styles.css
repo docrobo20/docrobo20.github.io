@@ -34,13 +34,22 @@ body {
     font-weight: bolder;
 }
 
-.contact_info {
+.contact_info, .subtitle {
     font-size: 0.8rem;
 }
 
 .index_link {
     font-size: 1.5rem;
 }
+
+header {
+    font-size: 1rem;
+}
+
+.project_title {
+    text-decoration: underline;
+}
+
 
 /* ------------------------------------------------
 
@@ -55,6 +64,7 @@ body, section, header, footer {
 div {
     display: flex;
     justify-content: center;
+    padding-bottom: 1rem;
 }
 
 a {
@@ -67,33 +77,49 @@ a:hover {
     text-decoration: underline;
 }
 
-a:visited{
+a:visited {
     color: inherit;
 }
 
 .contact_info {
     display: block;
     text-align: center;
-    padding-bottom: 2rem;
 }
 
-.index_link{
+.subtitle {
     display: flex;
+}
+
+header {
+    display: flex;
+    background-color: var(--background-secondary);
+    width: 2.5rem;
+    padding: 0.2rem;
+    border-radius: 10px;
+    border: 0.2rem solid var(--background-highlight);
+}
+
+.index_link {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 20rem;
     padding: 0.2rem;
-    margin: 0.5rem;
     background-color: var(--background-secondary);
     border-radius: 10px;
     border: 0.2rem solid var(--background-highlight);
 }
 
-.index_link:hover{
+.index_link:hover {
     background-color: var(--background-highlight);
 }
 
+.project {
+    justify-content: left;
+    flex-direction: column;
 
+}
 
 /* ------------------------------------------------
 
