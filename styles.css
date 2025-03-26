@@ -1,35 +1,16 @@
-/* thank you chatgpt */
+/* 
+color chart 
+#273746 - dark navy
+#566573 - shale blue ish
+#808b96 - blue grey
+#aeb6bf - grey
+#d5d8dc - light grey
+#ecf0f1 - off white
+*/
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
 
-header {
-    background: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-section {
-    background: white;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+* {
+    background-color: #273746;
+    color: #ecf0f1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
